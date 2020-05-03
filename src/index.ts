@@ -34,6 +34,11 @@ type RenamedQuery<D extends Dictionary, Q extends Query> = Extends<
   Query
 >;
 
+/**
+ * renames the keys of query using a dictionary. If no query is provided
+ * returns a function to do so.
+ * @param dictionary a mapping of old key names to new key names
+ */
 export function rename<D extends Dictionary>(
   dictionary: D,
 ): <Q extends Query>(query: Q) => RenamedQuery<D, Q>;
@@ -57,6 +62,11 @@ export function rename<D extends Dictionary, Q extends Query>(
   return query ? rename(query) : rename;
 }
 
+/**
+ * creates an object containing a `to` function to rename the keys of a query
+ * and a `from` function to rename them back to their original names.
+ * @param dictionary a mapping of old key names to new key names
+ */
 export default function <D extends Dictionary>(
   dictionary: D,
 ): {
