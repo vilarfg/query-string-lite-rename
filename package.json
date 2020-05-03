@@ -1,6 +1,6 @@
 {
   "name": "query-string-lite-rename",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "renames keys of `query-string-lite` queries and back",
   "main": "dist/index.js",
   "directories": {
@@ -49,7 +49,7 @@
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "query-string-lite": "^0.2.1"
   },
   "scripts": {
