@@ -1,0 +1,8 @@
+test
+docs
+coverage
+.*
+*.log
+*.yaml
+*.json
+jest.*
