@@ -1,6 +1,6 @@
 # query-string-lite-rename
 
-[![Build Status](https://travis-ci.com/vilarfg/query-string-lite-rename.svg?&branch=master)](https://travis-ci.com/vilarfg/query-string-lite-rename) [![Coverage Status](https://coveralls.io/repos/github/vilarfg/query-string-lite-rename/badge.svg?branch=master)](https://coveralls.io/github/vilarfg/query-string-lite-rename?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vilarfg/query-string-lite-rename/blob/master/LICENSE) [![Download Size](https://badgen.net/bundlephobia/minzip/query-string-lite-rename)](https://bundlephobia.com/result?p=query-string-lite-rename@0.2.1) [![npm version](https://badgen.net/npm/v/query-string-lite-rename)](https://www.npmjs.com/package/query-string-lite-rename)
+[![Build Status](https://travis-ci.com/vilarfg/query-string-lite-rename.svg?&branch=master)](https://travis-ci.com/vilarfg/query-string-lite-rename) [![Coverage Status](https://coveralls.io/repos/github/vilarfg/query-string-lite-rename/badge.svg?branch=master)](https://coveralls.io/github/vilarfg/query-string-lite-rename?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vilarfg/query-string-lite-rename/blob/master/LICENSE) [![Download Size](https://badgen.net/bundlephobia/minzip/query-string-lite-rename)](https://bundlephobia.com/result?p=query-string-lite-rename@0.1.0) [![npm version](https://badgen.net/npm/v/query-string-lite-rename)](https://www.npmjs.com/package/query-string-lite-rename)
 
 ## install
 
@@ -71,6 +71,8 @@ You can read all about ***why*** I decided to write this package over [here](). 
 ## licence
 
 [MIT](https://github.com/vilarfg/query-string-lite-rename/blob/master/LICENSE) Copyright (c) 2020 Fernando G. Vilar.
+
+
 
 
 
