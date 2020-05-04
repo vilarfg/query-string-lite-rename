@@ -1,6 +1,6 @@
 {
   "name": "query-string-lite-rename",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "renames keys of `query-string-lite` queries and back",
   "main": "dist/index.js",
   "directories": {

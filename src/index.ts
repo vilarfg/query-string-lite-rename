@@ -14,25 +14,16 @@ type KeyFromValue<V extends string, T extends Dictionary> = {
   [K in keyof T]: V extends T[K] ? K : never;
 }[keyof T];
 
-type Invert<T extends Dictionary> = Extends<
-  {
-    [V in T[keyof T]]: KeyFromValue<V, T>;
-  },
-  Dictionary
->;
+type Invert<T extends Dictionary> = {
+  [V in T[keyof T]]: KeyFromValue<V, T>;
+};
 
-type RenamedQuery<D extends Dictionary, Q extends Query> = Extends<
+type RenamedQuery<D extends Dictionary, Q extends Query> = {
+  [P in D[Extract<keyof Q, keyof D>]]: Q[Extends<Invert<D>[P], keyof Q>];
+} &
   {
-    [k in D[Extract<keyof Q, keyof D>]]: Extends<
-      Invert<D>[k],
-      Extract<keyof Q, keyof D>
-    >;
-  } &
-    {
-      [P in Exclude<keyof Q, keyof D>]: Q[P];
-    },
-  Query
->;
+    [P in Exclude<keyof Q, keyof D>]: Q[P];
+  };
 
 /**
  * creates a function to rename the keys of query using a dictionary.
@@ -86,6 +77,6 @@ export default function <D extends Dictionary>(
   }
   return {
     to: rename(toDict),
-    from: rename(fromDict),
+    from: rename(fromDict as Extends<Invert<D>, Dictionary>),
   };
 }
